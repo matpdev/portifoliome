@@ -1,8 +1,8 @@
 import Image from "next/image";
 import SmoothList from "react-smooth-list";
 import { motion } from "framer-motion";
-import profilePic from "../../public/Images/Save_perspective_matte.png";
-import styles from "../../styles/Home.module.css";
+import profilePic from "../public/Images/Save_perspective_matte.png";
+import styles from "../styles/Home.module.css";
 export default function Home() {
   return (
     <SmoothList>
