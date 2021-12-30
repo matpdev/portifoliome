@@ -1,4 +1,4 @@
-import styles from "../styles/Home.module.css";
+import styles from "../../styles/Home.module.css";
 import SmoothList from "react-smooth-list";
 
 export default function Navegation() {

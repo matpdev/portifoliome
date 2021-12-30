@@ -4,7 +4,7 @@ import { CodeIcon, HashtagIcon, GlobeIcon } from "@iconicicons/react";
 import SmoothList from "react-smooth-list";
 import { motion } from "framer-motion";
 import WorkFlow from "./Workflow";
-import styles from "../styles/Home.module.css";
+import styles from "../../styles/Home.module.css";
 export function Services() {
   return (
     <SmoothList>
