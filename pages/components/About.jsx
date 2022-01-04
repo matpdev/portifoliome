@@ -6,7 +6,7 @@ import profilePic from "../../public/Images/Save_perspective_matte.png";
 export function About() {
   return (
     <SmoothList>
-      <div className={styles.about}>
+      <div className={styles.about} id="About">
         <motion.div
           animate={{ y: [0, 15, 0] }}
           transition={{ duration: 3, repeat: Infinity }}

@@ -1,8 +1,8 @@
 /*############ Start Home Styles ##############*/
 
 .home {
-  width: 90%;
-  height: 100vh;
+  width: 100%;
+  height: auto;
   margin: auto;
   padding-top: 10px;
   color: white;
@@ -60,6 +60,20 @@
   -moz-transform: scale(1.05);
   -ms-transform: scale(1.05);
   -o-transform: scale(1.05);
+}
+
+/* Mobile */
+
+@media (max-width: 480px) {
+  .home {
+    margin-top: 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home_text {
+    margin-bottom: 20px;
+  }
 }
 
 /*############ End Home Styles ##############*/
@@ -128,6 +142,16 @@
   -o-transform: scale(1.05);
 }
 
+/* Mobile */
+
+@media (max-width: 480px) {
+  .about {
+    flex-direction: column;
+    margin-top: 100px;
+    text-align: center;
+  }
+}
+
 /*############ End About Styles ##############*/
 
 /*############ Start Navigation Styles ##############*/
@@ -136,7 +160,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
   z-index: 1050;
   width: 100%;
   height: 70px;
@@ -184,6 +207,68 @@
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
+}
+
+.Navegation_mobile{
+  display: none;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+
+  .Navegation_mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1050;
+    width: 100%;
+    height: 70px;
+    color: #D1D1D1;
+    background-color: rgba(29, 29, 29, 0.5);
+  }
+
+  .Navegation_mobile h2:first-child {
+    margin-left: 40px;
+    font-weight: 500;
+  }
+
+  .Navegation_mobile ul {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+  }
+
+  .Navegation_mobile ul li {
+    padding: 5px 10px 10px 5px;
+  }
+
+  .Navegation_mobile a {
+    font-size: 23px;
+    font-weight: 300;
+  }
+
+  .Navegation_mobile li {
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+  }
+
+  .Navegation_mobile a:active {
+    color: white;
+    text-decoration: underline;
+  }
+
+  .Navegation_mobile li:hover {
+    text-shadow: 3px 3px 15px #FFAC40;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
+
 }
 
 /*############ End Navigation Styles ##############*/
@@ -257,7 +342,7 @@
   border-radius: 8px;
   transform: skewX(15deg);
   transition: 0.5s ease-in-out;
-  filter: blur(60px);
+  filter: blur(90px);
   -webkit-transition: 0.5s ease-in-out;
   -moz-transition: 0.5s ease-in-out;
   -ms-transition: 0.5s ease-in-out;
@@ -266,10 +351,8 @@
   -moz-transform: skewX(15deg);
   -ms-transform: skewX(15deg);
   -o-transform: skewX(15deg);
-  -webkit-filter: blur(60px);
+  -webkit-filter: blur(90px);
 }
-
-/*  */
 
 .container .box:nth-child(1):before,
 .container .box:nth-child(1):after {
@@ -310,7 +393,7 @@
   opacity: 0;
   transition: 0.1s;
   animation: animate 2s ease-in-out infinite;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08)
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5)
 }
 
 .container .box:hover span::before {
@@ -386,12 +469,20 @@
   font-size: 2em;
   color: #fff;
   margin-bottom: 10px;
+  font-weight: 600;
 }
 
 .container .box .content p {
   font-size: 1.1em;
   margin-bottom: 10px;
   line-height: 1.4em;
+  font-weight: 500;
+}
+
+@media (max-width: 480px) {
+  .cards {
+    margin-top: 100px;
+  }
 }
 
 /*############ End Card Styles ##############*/
@@ -408,13 +499,14 @@
 
 .Workflow_super {
   margin-top: 40px;
+  padding-bottom: 30px;
   display: flex;
   justify-content: space-around;
 }
 
 .Workflow_box {
   width: 330px;
-  height: 340px;
+  height: auto;
   display: flex;
   justify-content: center;
   font-size: 13px;
@@ -480,6 +572,24 @@
   font-weight: 400;
 }
 
+@media (max-width: 480px) {
+  .Workflow_line {
+    display: none;
+  }
+
+  .Workflow_box span {
+    display: none;
+  }
+
+  .Workflow_super {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Workflow_box {
+    margin: 20px 0px;
+  }
+}
 
 /*############ End Workflow Styles ##############*/
 
@@ -516,7 +626,7 @@
 
 .Projects_box {
   width: 350px;
-  height: 350px;
+  height: auto;
   margin: 10px;
   display: flex;
   flex-direction: column;
@@ -602,6 +712,7 @@
 }
 
 .Projects_links {
+  margin: 10px 0;
   display: flex;
   flex-direction: row;
 }
@@ -655,4 +766,107 @@
   font-weight: 600;
 }
 
+@media (max-width:48kz0px) {
+  .Projects_box {
+    text-align: center;
+  }
+
+  .Projects_links {
+    justify-content: center;
+  }
+}
+
 /*############ End Projects Styles ##############*/
+
+/*############ Start Footer Styles ##############*/
+
+.Footer {
+  margin: 15px 0 0 0;
+  padding-bottom: 15px;
+  text-align: center;
+  background-color: #1b1b1b;
+}
+
+.Footer_header_content {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.Footer_header_content h4 {
+  font-weight: 400;
+  color: #FFAC40;
+  text-decoration: underline;
+}
+
+.Footer_header_content h1 {
+  font-weight: 700;
+}
+
+.Footer_Content {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon_Footer {
+  font-size: 40px;
+  margin: 30px 15px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.icon_Footer:hover {
+  filter: drop-shadow(0px 0px 5px rgba(255, 172, 64, 0.5));
+  -webkit-filter: drop-shadow(0px 0px 5px rgba(255, 172, 64, 0.5));
+  color: #FFAC40;
+}
+
+.Footer_divisor_horizontal {
+  width: 300px;
+  height: 2px;
+  background-color: #bad5f5;
+  margin: 0 30px;
+}
+
+.Footer_divisor_vertical {
+  width: 2px;
+  height: 50px;
+  background-color: #bad5f5;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.Footer_footer h1 {
+  font-weight: 800;
+}
+
+.Footer_footer h2 {
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.Footer_copyright {
+  margin-top: 15px;
+}
+
+/*############ End Footer Styles ##############*/
+
+/*############ Start Media Queries Styles ##############*/
+
+@media (max-width: 480px) {
+  .Navegation {
+    display: none;
+  }
+
+  .Navegation_mobile {
+    display: flex;
+  }
+}
+
+/*############ Start Media Queries Styles ##############*/

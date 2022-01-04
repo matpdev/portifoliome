@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <SmoothList>
       <div className={styles.home}>
-        <div>
+        <div className={styles.home_text}>
           <h4>
             Opa, eae? Sou <br />
           </h4>

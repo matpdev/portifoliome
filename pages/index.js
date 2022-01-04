@@ -5,6 +5,7 @@ import '../styles/Home.module.css'
 import { About } from "./components/About";
 import { Services } from "./components/Services";
 import {Projects} from "./components/Projects";
+import {Footer} from "./components/Footer";
 const Home = dynamic({
   loader: () => import("./components/Home"),
 });
@@ -21,6 +22,7 @@ export default function Start() {
         <About></About>
         <Services></Services>
         <Projects></Projects>
+        <Footer></Footer>
       </div>
     </>
   );

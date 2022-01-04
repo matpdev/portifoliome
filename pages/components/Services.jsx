@@ -8,7 +8,7 @@ import styles from "../../styles/Home.module.css";
 export function Services() {
   return (
     <SmoothList>
-      <div className={styles.cards}>
+      <div className={styles.cards} id="Services">
         <div className={styles.cards_text}>
           <h4>O que faço</h4>
           <h1>Serviços</h1>
@@ -32,7 +32,7 @@ export function Services() {
               <HashtagIcon className={styles.icon} />
               <h2>Social Media</h2>
               <p>
-                Trabalho com criações de <strong>Posts</strong>, Reels e Stories
+                Trabalho com criações de Posts, Reels e Stories
                 para Social Media, para melhorar alcances e o crescimento do
                 negócio para o público.
               </p>
