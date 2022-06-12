@@ -8,7 +8,7 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 
-export const Footer = () => {
+const Footer = () => {
   return (
     <SmoothList>
       <div className={styles.Footer} id="Footer">
@@ -28,7 +28,7 @@ export const Footer = () => {
             <FaInstagram className={styles.icon_Footer} />
           </a>
           <a href="#">
-            <FaLinkedin className={styles.icon_Footer} aria-hidden="true"/>
+            <FaLinkedin className={styles.icon_Footer} aria-hidden="true" />
           </a>
           <div className={styles.Footer_divisor_horizontal}></div>
         </div>
@@ -38,9 +38,11 @@ export const Footer = () => {
           <h2>Desenvolvedor Front-end</h2>
         </div>
         <div className={styles.Footer_copyright}>
-            <h4>Todos os direitos reservados - Matheus Alves</h4>
+          <h4>Todos os direitos reservados - Matheus Alves</h4>
         </div>
       </div>
     </SmoothList>
   );
 };
+
+export default Footer;

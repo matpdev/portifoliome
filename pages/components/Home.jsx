@@ -3,6 +3,7 @@ import SmoothList from "react-smooth-list";
 import { motion } from "framer-motion";
 import profilePic from "../../public/Images/Save_perspective_matte.png";
 import styles from "../../styles/Home.module.css";
+
 export default function Home() {
   return (
     <SmoothList>
@@ -24,7 +25,10 @@ export default function Home() {
           </p>
           <button className={styles.hire_me}>Me chame</button>
         </div>
-        <motion.div animate={{y: [0, 15, 0]}} transition={{duration: 3, repeat: Infinity}}>
+        <motion.div
+          animate={{ y: [0, 15, 0] }}
+          transition={{ duration: 3, repeat: Infinity }}
+        >
           <Image width="600px" height="600px" src={profilePic} alt="Eae" />
         </motion.div>
       </div>

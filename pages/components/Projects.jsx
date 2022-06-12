@@ -32,7 +32,7 @@ const StackIcons = (props) => {
   return <div> {icons} </div>;
 };
 
-export const Projects = (props) => {
+const Projects = (props) => {
   const data = [
     {
       project: "Project X",
@@ -133,3 +133,5 @@ export const Projects = (props) => {
     </SmoothList>
   );
 };
+
+export default Projects;

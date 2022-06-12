@@ -3,7 +3,8 @@ import SmoothList from "react-smooth-list";
 import styles from "../../styles/Home.module.css";
 import { motion } from "framer-motion";
 import profilePic from "../../public/Images/Save_perspective_matte.png";
-export function About() {
+
+export default function About() {
   return (
     <SmoothList>
       <div className={styles.about} id="About">

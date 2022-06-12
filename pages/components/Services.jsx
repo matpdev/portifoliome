@@ -5,7 +5,8 @@ import SmoothList from "react-smooth-list";
 import { motion } from "framer-motion";
 import WorkFlow from "./Workflow";
 import styles from "../../styles/Home.module.css";
-export function Services() {
+
+export default function Services() {
   return (
     <SmoothList>
       <div className={styles.cards} id="Services">
@@ -32,9 +33,9 @@ export function Services() {
               <HashtagIcon className={styles.icon} />
               <h2>Social Media</h2>
               <p>
-                Trabalho com criações de Posts, Reels e Stories
-                para Social Media, para melhorar alcances e o crescimento do
-                negócio para o público.
+                Trabalho com criações de Posts, Reels e Stories para Social
+                Media, para melhorar alcances e o crescimento do negócio para o
+                público.
               </p>
             </div>
           </div>
